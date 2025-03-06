@@ -23,7 +23,7 @@ To set up your environment to use the program, run the following command in a te
 
 ```sh
 # On Windows
-git clone https://github.com/dynital/vm_power_on/
+git clone https://github.com/dynital/vm_power_on.git
 cd .\vm_power_on\
 python -m venv .venv
 .venv\Scripts\activate
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ```sh
 # On Linux
-git clone https://github.com/dynital/vm_power_on/
+git clone https://github.com/dynital/vm_power_on.git
 cd .\vm_power_on\
 python3 -m venv .venv
 source .venv\bin\activate
