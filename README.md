@@ -10,7 +10,7 @@ This program is used to power on VMs, given a username and a password.
 4. [Resources](#resources)
 
 ## 📝 Introduction
-This script is written in Python 3.13.2 and not tested in any other environments.
+This script is written in Python 3.13.2 on Windows 11 and has not been tested in any other environments.
 The program receives in input a user's name (name.surname@domain.it) and password.
 The input will be processed, in case Azure Active Directory truncates the user name as it supports a max of 20 characters.
 The credentials will then be sent to the Domain Controller to be checked and will return either a True (the credentials are valid) or a False (the credentials are not valid).
@@ -22,6 +22,20 @@ Finally, after a match is found, the user's VM will be turned on and the script 
 To set up your environment to use the program, run the following command in a terminal:
 
 ```sh
+# On Windows
+git clone https://github.com/dynital/vm_power_on/
+cd .\vm_power_on\
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+```sh
+On Linux
+git clone https://github.com/dynital/vm_power_on/
+cd .\vm_power_on\
+python3 -m venv .venv
+source .venv\bin\activate
 pip install -r requirements.txt
 ```
 
