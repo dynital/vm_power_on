@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 ```sh
-On Linux
+# On Linux
 git clone https://github.com/dynital/vm_power_on/
 cd .\vm_power_on\
 python3 -m venv .venv
