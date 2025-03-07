@@ -1,6 +1,7 @@
 from src.ad_script import *
 from src.vsphere_script import *
-from config import *
+import dotenv
+import os
 import getpass
 
 def main():
@@ -8,14 +9,14 @@ def main():
     username = input("Enter your username (name.surname@domain.it): ")
     password = getpass.getpass("Enter your password: ")
 
-    tenant_username = input("Enter your tenant username: ", default=AAD_TENANT_ID)
-    client_id = input("Enter your client ID: ", default=AAD_CLIENT_ID)
+    tenant_username = os.getenv("AAD_TENANT_ID")
+    client_id = os.getenv("AAD_CLIENT_ID")
 
-    vcenter_host = input("Enter the vCenter host: ", default=VCENTER_HOST)
-    vcenter_user = input("Enter the vCenter username: ", default=VCENTER_USER)
-    vcenter_password = getpass.getpass("Enter the vCenter password: ")
+    vcenter_host = os.getenv("VCENTER_HOST")
+    vcenter_user = os.getenv("VCENTER_USER")
+    vcenter_password = os.getenv("VCENTER_PASSWORD")
 
-    excel_folder = EXCEL_FOLDER
+    excel_folder = os.getenv("EXCEL_FOLDER")
 
     if authenticate_user(username, password, tenant_username, client_id):
         name, surname = extract_name_surname(username)

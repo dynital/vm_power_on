@@ -2,3 +2,4 @@ pandas
 msal
 pyVmomi
 pyVim
+python-dotenv

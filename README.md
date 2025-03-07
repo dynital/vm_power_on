@@ -48,9 +48,9 @@ pip install -r requirements.txt
 ```
 
 ## 🔧 Configuration
-The needed configurations on the program can be found and customized in config.py, which looks like this
+The needed configurations on the program can be found and customized in .env, which looks like this
 
-```py
+```
 # Azure Active Directory (AAD) configuration
 AAD_TENANT_ID = "your_tenant_id"
 AAD_CLIENT_ID = "your_client_id"
@@ -58,7 +58,7 @@ AAD_CLIENT_ID = "your_client_id"
 # vCenter configuration
 VCENTER_HOST = "your_vcenter_host"
 VCENTER_USER = "your_vcenter_user"
-VCENTER_PASSWORD = "your_vcenter_password" # HIGHLY RECOMMENDED NOT TO USE
+VCENTER_PASSWORD = "your_vcenter_password"
 
 # Excel folder path
 EXCEL_FOLDER = "path_to_excel_folder"
