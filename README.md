@@ -2,6 +2,7 @@
 
 ## 📌 Overview
 This program is used to power on VMs, given a username and a password.
+[This is a project for self-education]
 
 ## 📖 Table of Contents
 1. [Introduction](#introduction)
