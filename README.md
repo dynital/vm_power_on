@@ -12,7 +12,7 @@ This program is used to power on VMs, given a username and a password.
 4. [Resources](#resources)
 
 ## 📝 Introduction
-This script is written in Python 3.13.2 on Windows 11 and has not been tested in any other environments.
+This script is written in Python 3.13 on Windows 11 and has not been tested in any other environments.
 
 The program receives in input a user's name (name.surname@domain.it) and password.
 
