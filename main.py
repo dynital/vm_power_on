@@ -6,6 +6,8 @@ import getpass
 
 def main():
 
+    dotenv.load_dotenv(".env")
+
     username = input("Enter your username (name.surname@domain.it): ")
     password = getpass.getpass("Enter your password: ")
 
